@@ -1,0 +1,31 @@
+{
+  "name": "md2nestedjson",
+  "description": "Convert a Karabiner config to markdown.",
+  "version": "0.0.0",
+  "author": {
+    "name": "Raine Revere",
+    "email": "raine@cybersemics.org",
+    "url": "https://github.com/raineorshine"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "license": "ISC",
+  "scripts": {
+    "lint": "eslint .",
+    "lintfix": "npm run lint -- --fix",
+    "test": "ava",
+    "watch": "ava --verbose --watch"
+  },
+  "devDependencies": {
+    "ava": "^3.12.1",
+    "eslint": "^7.9.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
