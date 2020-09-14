@@ -153,3 +153,20 @@ test('nest headings and lists', t => {
   }])
 
 })
+
+test('preserve HTML', t => {
+
+  const json = md2nestedjson(`
+    # Hello
+    This is some <i>italic</i> text.
+  `)
+
+  t.is(json, [{
+    value: 'Hello',
+    children: [{
+      value: 'This is some <i>italic</i> text.',
+      children: [],
+    }]
+  }])
+
+})
