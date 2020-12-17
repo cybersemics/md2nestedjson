@@ -112,7 +112,7 @@ test('nest lists', t => {
 
 })
 
-test('nest headings and lists', t => {
+test.only('nest headings and lists', t => {
 
   const json = md2nestedjson(`
     # one

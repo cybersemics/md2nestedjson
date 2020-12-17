@@ -5,6 +5,7 @@ Convert markdown to JSON.
 - Nest headings
 - Nest lists
   - optional
+- Uses [markdown-it](https://github.com/markdown-it) to parse.
 
 ## Install
 
@@ -26,6 +27,7 @@ Convert markdown to JSON.
 - Nest headings
 - Nest lists
   - optional
+- Uses [markdown-it](https://github.com/markdown-it) to parse.
 
 ## Install
 npm install md2nestedjson
@@ -49,6 +51,9 @@ console.log(json)
         value: 'optional',
         children: [],
       }],
+    }, {
+      value: 'Uses [markdown-it](https://github.com/markdown-it) to parse.',
+      children: [],
     }]
   }]
 }, {
